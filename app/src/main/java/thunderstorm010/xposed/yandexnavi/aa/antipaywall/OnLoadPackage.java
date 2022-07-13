@@ -24,7 +24,7 @@ public class OnLoadPackage implements IXposedHookLoadPackage {
                 new XC_MethodReplacement() {
                     @Override
                     protected Object replaceHookedMethod(MethodHookParam param) throws Exception {
-                        XposedBridge.log("Hooking " + className + "$getHasPlus...");
+                        XposedBridge.log("[NavigatorAAAntiPaywall] Hooking " + className + "$getHasPlus...");
                         return true;
                     }
                 }
